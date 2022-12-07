@@ -1,0 +1,12 @@
+{
+  "name": "-y",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dinbruno/puppet-application.git",
+  "author": "dinbruno <brunodinosantos@Outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "puppeteer": "^19.3.0"
+  }
+}
