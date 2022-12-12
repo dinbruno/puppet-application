@@ -59,7 +59,21 @@ const entryIntoJitsiMeeting = async () => {
     const buttonSelector =
         '.css-1hbmoh1-actionButton[aria-label="Participar da reunião"]';
 
-    /** Wait for the page 
+    /** Wait for the page to load */
+    await page.waitForSelector(buttonSelector);
+
+    /** Fill the name */
+    await page.type(
+        'input[placeholder="Digite seu nome aqui"]',
+        faker.name.firstName()
+    );
+
+    /** Join the meeting */
+    await page.click(buttonSelector);
+
+    /** Taking a screenshot */
+
+    await page.screenshot({path: './src/meet.png'});
 
 };
 
