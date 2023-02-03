@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "i": "^0.3.7",
+    "npm": "^9.2.0",
     "puppeteer": "^19.4.0",
     "puppeteer-core": "^19.4.0",
     "ts-node": "^10.9.1",
